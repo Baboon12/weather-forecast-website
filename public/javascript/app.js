@@ -1,3 +1,4 @@
+
 //this method is used to fetch the information/data of the specified url and convert into json to display only relevant information to the user]
 
 // fetch('http://localhost:3000/weather?address=!').then((response)=>{
@@ -29,7 +30,7 @@ weatherform.addEventListener('submit',(event)=>{
     message1.textContent='Loading...';
     
     message2.textContent='';
-    fetch('http://localhost:3000/weather?address='+place).then((response)=>{
+    fetch('/weather?address='+place).then((response)=>{
         response.json().then((info)=>{ 
             if(info.error){ 
                 message1.textContent=info.error;

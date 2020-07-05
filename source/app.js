@@ -6,6 +6,7 @@ var forecast=require('./utils/forecast')
 const { response } =require('express');
 var app=express();
 
+const port=process.env.PORT || 3000;
 //defining paths for express configuration //dirname points to source directory!
 var public=path.join(__dirname,'../public');
 var views=path.join(__dirname,'../templates/views');
@@ -97,6 +98,6 @@ app.get('*',(request,response)=>{ // * is symbol for any url that we didn't defi
 });
 
 //to start up the web server, the listen method is used,3000 is the port number
-app.listen(3000,()=>{
-    console.log('Server is running'); //callback function
+app.listen(port,()=>{
+    console.log('Server is running on port '+port); //callback function
 });    
