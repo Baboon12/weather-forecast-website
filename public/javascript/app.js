@@ -1,4 +1,3 @@
-console.log('This is client side Javacript!');
 //this method is used to fetch the information/data of the specified url and convert into json to display only relevant information to the user]
 
 // fetch('http://localhost:3000/weather?address=!').then((response)=>{
