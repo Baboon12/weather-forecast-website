@@ -73,3 +73,12 @@ button{
     line-height: 28px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+#image{
+    height: 150px;
+    width: 180px;
+    border-radius: 50%;
+    border: 2px solid grey;
+    float: right;
+    margin-top: 50px;
+}
