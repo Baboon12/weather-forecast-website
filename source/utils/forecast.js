@@ -9,7 +9,7 @@ var Forecast=(latitude,longitude,callback)=>{
         }else if(response.body.success==false){
             callback('Check The Co-ordinates!',undefined);
         }else{
-            callback(undefined,'The weather is '+response.body.current.weather_descriptions+'. It is currently '+response.body.current.temperature+' degrees out.   It feels like '+response.body.current.feelslike+' degrees out.  The humidity is '+response.body.current.humidity+' grams per cubic meter and the wind speed is '+response.body.current.wind_speed+' meters per second');
+            callback(undefined,'The weather is '+response.body.current.weather_descriptions+'. It is currently '+response.body.current.temperature+' degrees out but feels like '+response.body.current.feelslike+' degrees out.  The humidity is '+response.body.current.humidity+' grams per cubic meter and the wind speed is '+response.body.current.wind_speed+' meters per second');
         }
     })
 }
