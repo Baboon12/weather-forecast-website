@@ -1,0 +1,129 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background: #ecebd4;
+}
+
+ul{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+ul li{
+    list-style: none;
+}
+
+ul li a{
+    width: 80px;
+    height: 80px;
+    background-color: #ecebd4;
+    text-align: center;
+    line-height: 85px;
+    font-size: 35px;
+    margin: 0 20px;
+    display: block;
+    position: relative;
+    overflow : hidden;
+    border-radius: 50%;
+    border: 3px solid #292828bd;
+    z-index: 1;
+}
+
+ul li a .icon{
+    position: relative;
+    color: #131313;
+    transition: .5s;
+    z-index: 3;
+}
+
+ul li a:hover .icon{
+    color: whitesmoke;
+    transform: rotateY(360deg);
+}
+
+ul li a:before{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ff0000;
+    transition: .5s;
+    z-index: 2;
+}
+
+ul li a:hover:before{
+    top: 0;
+}
+
+ul li:nth-child(1) a:before{
+    background: #55F100   ;
+}
+
+ul li:nth-child(2) a:before{
+    background: #ff1967;
+}
+
+ul li:nth-child(3) a:before{
+    background-color: #1c64e8;
+}
+
+
+
+
+
+
+body{
+    /* text-align: center; */
+    color:  #a79344;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    max-width: 600px;
+    margin: 0px auto;
+    padding: 0px 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+p{
+    font-size: 20px;
+}
+
+.content{
+    flex-grow: 1;
+}
+
+footer{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+    border-top: 1px dotted grey;
+    margin-top: 10px;
+    padding: 10px 0px;
+}
+
+header{
+    margin-top:20px;
+    margin-bottom: 30px;
+}
+
+h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+header a{
+    color: black;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.actual{
+    font-family: Georgia;
+    font-size: 20px;
+    color: blueviolet;
+    flex: 30;
+}
