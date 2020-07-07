@@ -3,7 +3,7 @@ var key1=require('../../API-Keys/keys2');
 
 //callback function of geocode: 
 var Geocode=(address,callback)=>{
-    var url='https://api.mapbox.com/geocoding/v5/mapbox.places/'+encodeURIComponent(address)+'.json?access_token='+key1+'&limit=1';
+    var url='https://api.mapbox.com/geocoding/v5/mapbox.places/'+encodeURIComponent(address)+'.json?access_token=pk.eyJ1IjoiYmhhdnlhc3VyYSIsImEiOiJja2JrOXFsa2EwZ251MnlsY2V0ZWlxZW0xIn0.o0OmaORLTFEa6VudlrJ1TA&limit=1';
     request({url:url,json:true},(error,response)=>{
         if(error){
             callback('Unable to connect!',undefined);
