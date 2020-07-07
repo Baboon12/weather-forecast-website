@@ -2,7 +2,7 @@ var request=require('request');
 var key=require('../../API-Keys/keys');
 //callback function
 var Forecast=(latitude,longitude,callback)=>{
-    var URL='http://api.weatherstack.com/current?access_key=8f35c144b12694ec497948efd9f7229f&query='+encodeURIComponent(latitude)+','+encodeURIComponent(longitude)+'&units=m';
+    var URL='http://api.weatherstack.com/current?access_key='+key+'&query='+encodeURIComponent(latitude)+','+encodeURIComponent(longitude)+'&units=m';
     request({url: URL, json: true},(error,response)=>{
         if(error){
             callback('Unable to connect',undefined);
